@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: 0;
+
+}
+
+body{
+    font-family: 'Orbitron', sans-serif;
+}
+
+ul{
+    list-style: none;
+}
+
+img{
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.wrapper{
+    display: flex;
+}
+
+header{
+    max-width: 425px;
+    background-color: black;
+    padding: 20px;
+    height: 100vh;
+}
+
+header.logo{
+    border-bottom: 2px solid white;
+    margin-bottom: 20px;
+}
+
+header ul li{
+    cursor: pointer;
+    color: white;
+    font-size: 110%;
+    font-weight: 700;
+    padding: 10px;
+    transition: 1s;
+}
+
+header .botones{
+    display: flex;
+}
+
+header ul li:hover{
+    background-color: white;
+    color: black;
+}
+
+header .botones div{
+    width: 100%;
+    margin: 0 2%;
+    border: 1px solid gold;
+    color: gold;
+    padding: 10px;
+    cursor: pointer;
+    display: none;
+}
+
+header .botones div:hover{
+    border: 1px solid black;
+    color: black;
+    background-color: gold;
+}
+
+main{
+    padding: 20px;
+}
+
+main section{
+    padding: 20px;
+    border: 1px solid black;
+    width: 70vw;
+}
+
+main h2{
+    margin: 20px 0;
+    text-decoration: underline;
+}
+
+main section .peliculas{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+main section .peliculas article{
+    width: 30.33%;
+    margin: 1.5%;
+    background-color: black;
+    color: white;
+    padding: 20px;
+    border: 2px solid gold;
+}
+
+main section .pelicula article h3{
+    color: gold;
+}
+
+
+@media(max-width: 600px){
+    .wrapper{
+        flex-wrap: wrap;
+    }
+    header{
+        max-width: 600px;
+        height: auto;
+    }
+    main section{
+        width: auto;
+        height: auto;
+    }
+    main section .peliculas article{
+        width: 97%;
+        margin: 1% 1.5%;
+    }
+}
